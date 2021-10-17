@@ -1,0 +1,349 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.woff2?t=1627702735830') format('woff2'),
+    url('../fonts/iconfont.woff?t=1627702735830') format('woff'),
+    url('../fonts/iconfont.ttf?t=1627702735830') format('truetype');
+}
+
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.style_red {
+  color: #c81623;
+}
+.shortcut {
+  height: 31px;
+  line-height: 31px;
+  background-color: #f1f1f1;
+}
+.shortcut ul li {
+  float: left;
+}
+.shortcut .fr ul li:nth-child(even) {
+  width: 1px;
+  height: 12px;
+  background-color: #333;
+  margin: 9px 15px 0;
+}
+
+.arrow-icon a::after {
+  content: '\e665';
+  font-family: 'iconfont';
+  padding-left: 5px;
+  font-size: 12px;
+  font-style: normal;
+}
+.fr .arrow-icon:hover {
+  background-color: #fff;
+}
+header {
+  border-bottom: 2px solid #b1191a;
+}
+.header {
+  height: 105px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  margin-top: 25px;
+  font-size: 0;
+  display: block;
+  width: 171px;
+  height: 61px;
+  background: url(../img/logo.png) no-repeat;
+}
+.search {
+  position: absolute;
+  left: 346px;
+  top: 25px;
+  width: 538px;
+  height: 36px;
+  border: 2px #b1191a solid;
+}
+.search input {
+  float: left;
+  width: 453px;
+  height: 36px;
+  padding-left: 10px;
+}
+.search button {
+  float: left;
+  width: 75px;
+  height: 36px;
+  background-color: #b1191a;
+  font-size: 16px;
+  color: #fff;
+}
+.hotwords {
+  margin-top: 10px;
+  position: absolute;
+  top: 66px;
+  left: 346px;
+}
+.hotwords a {
+  margin: 0 10px;
+}
+.shopcar {
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  width: 140px;
+  height: 35px;
+  font: 13px / 45px 微软雅黑;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+  background-color: #f7f7f7;
+}
+.shopcar::before {
+  content: '\e604';
+  font-family: 'iconfont';
+  font-size: 16px;
+  margin-right: 10px;
+  color: #c81623;
+}
+.shopcar::after {
+  content: '2';
+}
+.NavList {
+  height: 55px;
+}
+.NavList .all_shopping {
+  width: 240px;
+  float: left;
+  height: 55px;
+  line-height: 55px;
+  background-color: #b1191a;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.NavList ul li {
+  margin-top: 10px;
+  float: left;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 0px 22px;
+  font: 16px / 45px 微软雅黑;
+}
+.NavList ul li a:hover {
+  color: #c81623;
+}
+
+/* 固定导航栏 */
+.fixedtool {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -676px;
+  width: 66px;
+  background-color: #fff;
+  display: none;
+}
+
+.fixedtool li {
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.fixedtool .current {
+  background-color: #c81623;
+  color: #fff;
+}
+
+/* 页面底部 */
+.footer {
+  height: 386px;
+  background-color: #f5f5f5;
+  padding-top: 30px;
+}
+.mod_service {
+  height: 79px;
+  border-bottom: 1px solid #ccc;
+}
+
+.mod_service li {
+  float: left;
+  width: 240px;
+  height: 79px;
+}
+.mod-service-icon {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-left: 35px;
+  background: url(../img/icons.png) no-repeat;
+}
+.mod_service_zheng {
+  background-position: -253px -3px;
+}
+.mod_service_tit {
+  float: left;
+  margin-left: 5px;
+}
+.mod_service_tit h5 {
+  margin: 5px 0;
+}
+.mod_service_kuai {
+  background-position: -255px -54px;
+}
+.mod_service_bao {
+  background-position: -257px -105px;
+}
+.mod_service_te {
+  background-position: -257px -156px;
+}
+.mod_service_help {
+  background-position: -257px -207px;
+}
+
+.mod_help {
+  height: 187px;
+  border-bottom: 1px solid #ccc;
+}
+.mod_help_item {
+  float: left;
+  width: 150px;
+  padding: 20px 0 0 50px;
+}
+.mod_help_item dt {
+  height: 25px;
+  font-size: 16px;
+}
+.mod_help_item dd {
+  height: 22px;
+}
+.mod_help_app dt,
+.mod_help_app p {
+  padding-left: 15px;
+}
+.mod_help_app img {
+  margin: 7px 0;
+  width: 100px;
+  height: 100px;
+}
+.mod_copyright {
+  text-align: center;
+}
+.mod_copyright_links {
+  margin: 20px 0 10px 0;
+}
+.mod_copyright_links a {
+  margin: 5px;
+}
+.mod_copyright_info {
+  line-height: 18px;
+}
+.footer a:hover {
+  color: #c81623;
+}
+
+/* 侧栏按钮 */
+.toolbar {
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+  z-index: 10;
+  width: 84px;
+}
+.toolbar .item {
+  position: relative;
+  display: block;
+  width: 82px;
+  height: 90px;
+  margin-top: -1px;
+  background-color: #f5f5f5;
+  border: 1px solid #e4e4e4;
+  text-align: center;
+}
+.toolbar .icon {
+  /* position: relative; */
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 8px;
+  padding-top: 18px;
+}
+.toolbar img {
+  width: 30px;
+  height: 30px;
+}
+.toolbar .hover {
+  display: none;
+}
+.toolbar .item:hover span {
+  color: #ff6700;
+}
+.toolbar .item:hover .static {
+  display: none;
+}
+.toolbar .item:hover .hover {
+  display: block;
+}
+.toolbar .item:last-child {
+  margin-top: 14px;
+  border-top: 1px solid #f5f5f5;
+  /* visibility: hidden; */
+}
+.toolbar .item .pop-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 14px;
+  background: #f5f5f5;
+  border: 1px solid #e4e4e4;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px 10px 10px 10px;
+}
+.toolbar .item .pop-content::before {
+  right: -19px;
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #f5f5f5;
+  z-index: 1;
+}
+.toolbar .item .pop-content::before {
+  content: '';
+  position: absolute;
+  top: 21%;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  overflow: hidden;
+}
+
+.toolbar .item .pop-content img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 6px auto;
+}
+.toolbar .item .pop-content span {
+  display: block;
+  width: 82px;
+  margin: 14px auto 0;
+  color: #757575;
+  text-align: center;
+}
+.toolbar .phone:hover .pop-content {
+  -webkit-transform: translate3d(-110%, 0, 0);
+  transform: translate3d(-110%, 0, 0);
+  opacity: 1;
+  visibility: visible;
+}

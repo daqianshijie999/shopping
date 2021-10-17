@@ -1,0 +1,124 @@
+.w {
+  width: 1200px;
+  margin: auto;
+}
+.header {
+  height: 82px;
+  border-bottom: 2px solid #b1191a;
+}
+.logo {
+  padding-top: 15px;
+}
+.registererea {
+  height: 520px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+.registererea h3 {
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  background-color: #ececec;
+  padding: 0 10px;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 18px;
+}
+.registererea em {
+  font-size: 14px;
+  float: right;
+}
+.registererea a {
+  color: #c81623;
+}
+.reg_form {
+  width: 610px;
+  height: 400px;
+  margin: 40px auto 0;
+  overflow: hidden;
+}
+.reg_form li {
+  margin: 15px;
+}
+.reg_form label {
+  display: inline-block;
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  text-align: right;
+}
+
+.reg_form input[type='text'] {
+  width: 238px;
+  height: 34px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+}
+.error {
+  color: #df3033;
+  margin-left: 10px;
+}
+.error_icon,
+.success_icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/error.png) no-repeat;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.success {
+  color: #40b83f;
+  margin-left: 10px;
+}
+.success_icon {
+  background: url(../img/success.png) no-repeat;
+}
+
+.safe span {
+  margin-left: 200px;
+}
+.safe p {
+  display: inline;
+  color: #fff;
+  padding: 0 10px;
+}
+.safe p.first {
+  background-color: #de1111;
+}
+.safe p.second {
+  background-color: #40b83f;
+}
+.safe p.thirdly {
+  background-color: #ffbc05;
+}
+.agree {
+  padding-left: 150px;
+  padding-top: 15px;
+}
+.agree input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.agree a {
+  color: #1ba1e6;
+}
+input[type='submit'] {
+  width: 200px;
+  height: 34px;
+  background-color: #c81623;
+  margin: 30px 0 0 130px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+}
+.footer {
+  height: 120px;
+  text-align: center;
+}
+.links {
+  margin-top: 20px;
+  height: 30px;
+}
+.copyright {
+  line-height: 20px;
+}

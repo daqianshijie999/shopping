@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人注册</title>
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <div class="w">
+      <div class="header">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="registererea">
+        <h3>注册用户</h3>
+        <em>我有账号，去<a href="login.html">登陆</a></em>
+        <div class="reg_form">
+          <form action="#">
+            <ul>
+              <li>
+                <label for="tel">手机号:</label><input type="text" id="tel" />
+                <span class="error"
+                  ><i class="error_icon"></i>
+                  手机号码格式不正确，请重新输入</span
+                >
+              </li>
+              <li><label for="">短信验证码:</label><input type="text" /></li>
+              <li>
+                <label for="">登录密码:</label><input type="text" />
+                <span class="success"
+                  ><i class="success_icon"></i>
+                  手机号码格式不正确，请重新输入</span
+                >
+              </li>
+              <li>
+                <div class="safe">
+                  <span>安全程度</span>
+                  <p class="first">弱</p>
+                  <p class="second">中</p>
+                  <p class="thirdly">强</p>
+                </div>
+              </li>
+              <li>
+                <label for="">确认密码:</label><input type="text" />
+                <span class="error"><i class="error_icon"></i> 密码不一致</span>
+              </li>
+              <li class="agree">
+                <input type="checkbox" />同意协议并注册<a href="#"
+                  >《好吉吉用户协议》</a
+                >
+              </li>
+              <li><input type="submit" value="用户注册" /></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="links">
+          关于我们 | 联系我们 | 联系客服 | 商家入驻 | 营销中心 | 手机品优购 |
+          销售联盟 | 品优购社区 | 品优购公益 | English Site | Contact U
+        </p>
+        <p class="copyright">地址：无</p>
+      </div>
+    </div>
+  </body>
+</html>

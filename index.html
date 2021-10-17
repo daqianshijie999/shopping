@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页 - 大千世界</title>
+    <meta
+      name="description"
+      content="品优购JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!"
+    />
+    <meta
+      name="Keywords"
+      content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,品优购"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- 引入swiper css -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- 图标css -->
+    <link rel="stylesheet" href="fonts/iconfont.css" />
+
+    <!-- 引入swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.3.min.js"></script>
+    <!-- 引入jquery.js -->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script
+      crossorigin="anonymous"
+      src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script> -->
+    <!-- 引进vue.js -->
+    <script src="js/vue.min.js"></script>
+    <!-- 自己的js -->
+    <script src="js/index/Is_pc.js"></script>
+    <script src="js/index/index.js"></script>
+
+    <style>
+      audio {
+        width: 100%;
+        height: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <audio controls="controls" autoplay="autoplay">
+      <source src="media/无题1.ogg" type="audio/ogg /" />
+      <source src="medio/无题1.mp3" type="audio/mpeg" />
+      您的浏览器不支持播放声音
+    </audio>
+    <!-- 顶部导航模块 start -->
+    <section class="shortcut">
+      <div class="w">
+        <div class="fl">
+          <ul>
+            <li>优品购欢迎您！&nbsp;</li>
+            <li>
+              <a href="login.html">请登录</a>&nbsp;&nbsp;<a
+                href="register.html"
+                class="style_red"
+                >免费注册</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="fr">
+          <ul>
+            <li><a href="javascript:;">我的订单</a></li>
+            <li></li>
+            <li class="arrow-icon">
+              <a href="javascript:;">我的优品购</a>
+              <div class="mystore"></div>
+            </li>
+            <li></li>
+            <li><a href="javascript:;">优品购会员</a></li>
+            <li></li>
+            <li><a href="javascript:;">企业采购</a></li>
+            <li></li>
+            <li class="arrow-icon"><a href="javascript:;">关注优品购</a></li>
+            <li></li>
+            <li class="arrow-icon"><a href="javascript:;">客户服务</a></li>
+            <li></li>
+            <li class="arrow-icon"><a href="javascript:;">网站导航</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- 快捷导航模块 end -->
+    <!-- header 头部模块 start -->
+    <header>
+      <div class="header w">
+        <div>
+          <h1>
+            <a class="logo" href="index.html" title="优品购商城">优品购商城</a>
+          </h1>
+        </div>
+        <!-- search搜索模块 -->
+        <div class="search">
+          <input type="text" placeholder="语言开发" />
+          <button>搜索</button>
+        </div>
+        <div class="hotwords">
+          <a v-for="i in words" :href="i.href">{{i.word}}</a>
+        </div>
+        <!-- 我的购物车模块 -->
+        <div class="shopcar">我的购物车</div>
+      </div>
+      <!-- 头部导航栏模块 -->
+      <div class="NavList w">
+        <div class="all_shopping">全部商品分类</div>
+        <ul id="navlist">
+          <li v-for="i in words"><a :href="i.href">{{i.name}}</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- header 头部模块 end -->
+    <!-- 身体模块(楼层区) start-->
+    <div class="body">
+      <!-- container模块  start-->
+      <div class="container">
+        <!-- 左边 -->
+        <div class="container-left">
+          <ul>
+            <li>
+              <a href="javascript:;">图书</a>、<a href="javascript:;">音像</a>
+              、
+              <a href="javascript:;">数字商品</a>
+            </li>
+            <li><a href="javascript:;">家用电器</a></li>
+            <li>
+              <a href="javascript:;">手机</a>、<a href="javascript:;">数码</a>
+            </li>
+            <li>
+              <a href="javascript:;">电脑</a>、<a href="javascript:;">办公</a>
+            </li>
+            <li>
+              <a href="javascript:;">家居</a>、<a href="javascript:;">家具</a
+              >、<a href="javascript:;">家装</a>、<a href="javascript:;"
+                >厨具</a
+              >
+            </li>
+            <li><a href="javascript:;">服饰内衣</a></li>
+            <li><a href="javascript:;">个护化妆</a></li>
+            <li><a href="javascript:;">运动健康</a></li>
+            <li><a href="javascript:;">汽车用品</a></li>
+            <li>
+              <a href="javascript:;">彩票</a>、<a href="javascript:;">旅行</a>
+            </li>
+            <li>
+              <a href="javascript:;">理财</a>、<a href="javascript:;">众筹</a>
+            </li>
+            <li>
+              <a href="javascript:;">母婴</a>、<a href="javascript:;">玩具</a>
+            </li>
+            <li><a href="javascript:;">箱包</a></li>
+          </ul>
+        </div>
+        <!-- 轮播图 -->
+        <div class="container-banner">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="src in datas">
+                <a href="javascript:;"><img :src="src" alt="" /></a>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <!-- 右边广告栏 -->
+        <div class="container-right">
+          <div class="container-right-tit">
+            <p>品优购快报</p>
+            <span>更多</span>
+          </div>
+          <div class="container-right-txt">
+            <ul class="news-list">
+              <li v-for="i in datas">
+                <span>{{i.span}}</span><a :href="i.href">{{i.word}}</a>
+              </li>
+            </ul>
+            <ul class="menu">
+              <li>
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xe6b0;</i><span>火车票</span></a
+                >
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xe6ba;</i><span>彩票</span></a
+                >
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xe63b;</i><span>飞机票</span></a
+                >
+              </li>
+              <li class="last">
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xe616;</i><span>电影票</span></a
+                >
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xe603;</i><span>酒店</span></a
+                >
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xe68d;</i><span>加油站</span></a
+                >
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xe6cb;</i><span>游戏</span></a
+                >
+              </li>
+              <li class="last">
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xe61d;</i><span>权益</span></a
+                >
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xe61a;</i><span>白条</span></a
+                >
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xf1de;</i><span>礼品</span></a
+                >
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xe6aa;</i><span>理财</span></a
+                >
+              </li>
+              <li class="last">
+                <a href="javascript:;"
+                  ><i class="iconfont">&#xe632;</i><span>闪付</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-adv">
+            <a href="javascript:;"><img data-lazy-src="img/ad.jpg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- container模块  end-->
+      <!-- 推荐 -->
+      <div class="container-recommend">
+        <ul>
+          <li>
+            <div>
+              <img data-lazy-src="img/clock.png" alt="" />
+              <h3>今日推荐</h3>
+            </div>
+          </li>
+          <li class="yui3">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/today01.png" alt=""
+            /></a>
+          </li>
+          <li class="yui3">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/today02.png" alt=""
+            /></a>
+          </li>
+          <li class="yui3">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/today03.png" alt=""
+            /></a>
+          </li>
+          <li class="yui3">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/today04.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- 猜你喜欢 -->
+      <div class="like w">
+        <div class="title">
+          <h3>猜你喜欢</h3>
+          <a href="javascript:;"
+            ><i class="iconfont">&#xe68c;</i><span>换一批</span></a
+          >
+        </div>
+        <div class="tobody">
+          <ul>
+            <li>
+              <a href="javascript:;"
+                ><img data-lazy-src="img/like_01.png" alt="" />
+                <p>阳光美包新款单肩包女包时尚子母包四件套女</p>
+              </a>
+              <h3>¥116.00</h3>
+              <i></i>
+            </li>
+            <li>
+              <a href="javascript:;"
+                ><img data-lazy-src="img/like_02.png" alt="" />
+                <p>爱仕达 30CM炒锅不粘锅NWG8330E电磁炉炒</p>
+              </a>
+              <h3>¥58.00</h3>
+              <i></i>
+            </li>
+            <li>
+              <a href="javascript:;"
+                ><img data-lazy-src="img/like_03.png" alt="" />
+                <p>
+                  捷波朗<br />
+                  （jabra）BOOSI劲步
+                </p>
+              </a>
+              <h3>¥488.00</h3>
+              <i></i>
+            </li>
+            <li>
+              <a href="javascript:;"
+                ><img data-lazy-src="img/like_04.png" alt="" />
+                <p>阳光美包新款单肩包女包时尚子母包四件套女</p>
+              </a>
+              <h3>¥236.00</h3>
+              <i></i>
+            </li>
+            <li>
+              <a href="javascript:;"
+                ><img data-lazy-src="img/like_05.png" alt="" />
+                <p>
+                  三星（G5500）
+                  <br />
+                  移动联通双网通
+                </p>
+              </a>
+              <h3>¥599.00</h3>
+              <i class="last"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 兴趣 -->
+      <div class="fun w">
+        <div class="title">
+          <h3>有趣生活·大千世界</h3>
+        </div>
+        <div class="tobody">
+          <div class="Interest-id01">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/interest01.png" alt=""
+            /></a>
+          </div>
+          <div class="Interest-id02">
+            <h5>好东西</h5>
+            <a href="javascript:;"
+              ><img data-lazy-src="img/interest02.png" alt="" /></a
+            ><a href="javascript:;"
+              ><img data-lazy-src="img/interest03.png" alt=""
+            /></a>
+          </div>
+          <div class="Interest-id03">
+            <h5>品牌街</h5>
+            <a href="javascript:;"
+              ><img data-lazy-src="img/interest04.png" alt="" /></a
+            ><a href="javascript:;"
+              ><img data-lazy-src="img/interest05.png" alt=""
+            /></a>
+          </div>
+          <div class="Interest-id04">
+            <ul>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand01.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand02.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand03.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand04.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand05.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand06.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand07.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand08.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand09.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand10.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand11.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand12.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand13.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><img data-lazy-src="img/brand13.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 家用电器 -->
+      <div class="wiring w">
+        <div class="title">
+          <h3>家用电器</h3>
+          <ul>
+            <li><a class="rucurrent" href="javascript:;">热门</a>|</li>
+            <li><a href="javascript:;">大家电</a>|</li>
+            <li><a href="javascript:;">生活电器</a>|</li>
+            <li><a href="javascript:;">厨房电器</a>|</li>
+            <li><a href="javascript:;">个护健康</a>|</li>
+            <li><a href="javascript:;">应季电器</a>|</li>
+            <li><a href="javascript:;">空气/净水</a>|</li>
+            <li><a href="javascript:;">新奇特</a>|</li>
+            <li><a href="javascript:;">高端电器</a></li>
+          </ul>
+        </div>
+        <div class="tobody">
+          <div class="diadian-id01">
+            <ul>
+              <li><a href="javascript:;">节能补贴</a></li>
+              <li><a href="javascript:;">4K电视</a></li>
+              <li><a href="javascript:;">空气净化器</a></li>
+              <li><a href="javascript:;">IH电饭煲</a></li>
+              <li><a href="javascript:;">滚筒洗衣机</a></li>
+              <li><a href="javascript:;">电热水器</a></li>
+            </ul>
+            <div>
+              <a href="javascript:;">
+                <img data-lazy-src="img/floor-1-1.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- 水壶轮播图 -->
+          <div class="diadian-id02">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/floor-1-b01.png" alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/floor-1-b02.png" alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/floor-1-b03.png" alt=""
+                  /></a>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="diadian-id03">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/floor-1-2.png" alt="" /></a
+            ><a href="javascript:;"
+              ><img data-lazy-src="img/floor-1-3.png" class="last" alt=""
+            /></a>
+          </div>
+          <div class="diadian-id04">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/floor-1-4.png" alt=""
+            /></a>
+          </div>
+          <div class="diadian-id05">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/floor-1-5.png" alt="" /></a
+            ><a href="javascript:;"
+              ><img data-lazy-src="img/floor-1-6.png" class="last" alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- 商标 -->
+        <div class="zanzu">
+          <ul>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_03.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_05.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_07.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_09.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_11.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_13.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_15.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_17.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_19.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_21.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 手机通讯 -->
+      <div class="wiring w">
+        <div class="title">
+          <h3>手机通讯</h3>
+          <ul>
+            <li><a class="rucurrent" href="javascript:;">热门</a>|</li>
+            <li><a href="javascript:;">品质优选</a>|</li>
+            <li><a href="javascript:;">新机尝鲜</a>|</li>
+            <li><a href="javascript:;">高性价比</a>|</li>
+            <li><a href="javascript:;">口碑推荐</a>|</li>
+            <li><a href="javascript:;">合约机</a>|</li>
+            <li><a href="javascript:;">手机卡</a>|</li>
+            <li><a href="javascript:;">店铺精选</a>|</li>
+            <li><a href="javascript:;">手机配件</a></li>
+          </ul>
+        </div>
+        <div class="tobody">
+          <div class="diadian-id01">
+            <ul>
+              <li><a href="javascript:;">手机通讯</a></li>
+              <li><a href="javascript:;">以旧换新</a></li>
+              <li><a href="javascript:;">双卡双待</a></li>
+              <li><a href="javascript:;">自营配件</a></li>
+              <li><a href="javascript:;">金属机身</a></li>
+              <li><a href="javascript:;">高清屏</a></li>
+            </ul>
+            <div>
+              <a href="javascript:;">
+                <img data-lazy-src="img/phone01.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- 水壶轮播图 -->
+          <div class="diadian-id02">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/phone02.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/phone03.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/phone04.jpg" alt=""
+                  /></a>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="diadian-id03">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/phone05.jpg" alt="" /></a
+            ><a href="javascript:;"
+              ><img data-lazy-src="img/phone07.jpg" class="last" alt=""
+            /></a>
+          </div>
+          <div class="diadian-id04">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/phone06.jpg" alt=""
+            /></a>
+          </div>
+          <div class="diadian-id05">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/phone09.jpg" alt="" /></a
+            ><a href="javascript:;"
+              ><img data-lazy-src="img/phone10.jpg" class="last" alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- 商标 -->
+        <div class="zanzu">
+          <ul>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_03.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_05.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_07.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_09.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_11.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_13.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_15.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_17.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_19.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_21.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 电脑办公 -->
+      <div class="wiring w">
+        <div class="title">
+          <h3>电脑办公</h3>
+          <ul>
+            <li><a class="rucurrent" href="javascript:;">热门</a>|</li>
+            <li><a href="javascript:;">品质优选</a>|</li>
+            <li><a href="javascript:;">新机尝鲜</a>|</li>
+            <li><a href="javascript:;">高性价比</a>|</li>
+            <li><a href="javascript:;">口碑推荐</a>|</li>
+            <li><a href="javascript:;">合约机</a>|</li>
+            <li><a href="javascript:;">手机卡</a>|</li>
+            <li><a href="javascript:;">店铺精选</a>|</li>
+            <li><a href="javascript:;">手机配件</a></li>
+          </ul>
+        </div>
+        <div class="tobody">
+          <div class="diadian-id01">
+            <ul>
+              <li><a href="javascript:;">节能补贴</a></li>
+              <li><a href="javascript:;">4K电视</a></li>
+              <li><a href="javascript:;">空气净化器</a></li>
+              <li><a href="javascript:;">IH电饭煲</a></li>
+              <li><a href="javascript:;">滚筒洗衣机</a></li>
+              <li><a href="javascript:;">电热水器</a></li>
+            </ul>
+            <div>
+              <a href="javascript:;">
+                <img data-lazy-src="img/computer01.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- 水壶轮播图 -->
+          <div class="diadian-id02">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/computer02.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/computer03.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/computer04.jpg" alt=""
+                  /></a>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="diadian-id03">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/computer05.jpg" alt="" /></a
+            ><a href="javascript:;"
+              ><img data-lazy-src="img/computer06.jpg" class="last" alt=""
+            /></a>
+          </div>
+          <div class="diadian-id04">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/computer07.jpg" alt=""
+            /></a>
+          </div>
+          <div class="diadian-id05">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/computer08.jpg" alt="" /></a
+            ><a href="javascript:;"
+              ><img data-lazy-src="img/computer09.jpg" class="last" alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- 商标 -->
+        <div class="zanzu">
+          <ul>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_03.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_05.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_07.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_09.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_11.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_13.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_15.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_17.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_19.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_21.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 精品家具 -->
+      <div class="wiring w">
+        <div class="title">
+          <h3>精品家具</h3>
+          <ul>
+            <li><a class="rucurrent" href="javascript:;">热门</a>|</li>
+            <li><a href="javascript:;">品质优选</a>|</li>
+            <li><a href="javascript:;">新机尝鲜</a>|</li>
+            <li><a href="javascript:;">高性价比</a>|</li>
+            <li><a href="javascript:;">口碑推荐</a>|</li>
+            <li><a href="javascript:;">合约机</a>|</li>
+            <li><a href="javascript:;">手机卡</a>|</li>
+            <li><a href="javascript:;">店铺精选</a>|</li>
+            <li><a href="javascript:;">手机配件</a></li>
+          </ul>
+        </div>
+        <div class="tobody">
+          <div class="diadian-id01">
+            <ul>
+              <li><a href="javascript:;">节能补贴</a></li>
+              <li><a href="javascript:;">4K电视</a></li>
+              <li><a href="javascript:;">空气净化器</a></li>
+              <li><a href="javascript:;">IH电饭煲</a></li>
+              <li><a href="javascript:;">滚筒洗衣机</a></li>
+              <li><a href="javascript:;">电热水器</a></li>
+            </ul>
+            <div>
+              <a href="javascript:;">
+                <img data-lazy-src="img/wiring01.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- 水壶轮播图 -->
+          <div class="diadian-id02">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/wiring02.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/wiring03.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"
+                    ><img src="img/wiring04.jpg" alt=""
+                  /></a>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="diadian-id03">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/wiring05.jpg" alt="" /></a
+            ><a href="javascript:;"
+              ><img data-lazy-src="img/wiring06.jpg" class="last" alt=""
+            /></a>
+          </div>
+          <div class="diadian-id04">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/wiring07.jpg" alt=""
+            /></a>
+          </div>
+          <div class="diadian-id05">
+            <a href="javascript:;"
+              ><img data-lazy-src="img/wiring08.jpg" alt="" /></a
+            ><a href="javascript:;"
+              ><img data-lazy-src="img/wiring09.jpg" class="last" alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- 商标 -->
+        <div class="zanzu">
+          <ul>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_03.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_05.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_07.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_09.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_11.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_13.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_15.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_17.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_19.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="javascipt:;"
+                ><img data-lazy-src="img/brand_21.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 电梯导航栏 -->
+      <div class="fixedtool">
+        <ul>
+          <li class="current">猜你喜欢</li>
+          <li>传智兴趣</li>
+          <li>家用电器</li>
+          <li>手机通讯</li>
+          <li>电脑办公</li>
+          <li>精品家具</li>
+        </ul>
+      </div>
+    </div>
+    <!-- 身体模块 end-->
+    <!--页面底部 start-->
+    <div class="footer">
+      <div class="w">
+        <!-- mod_service -->
+        <div class="mod_service">
+          <ul>
+            <li>
+              <i class="mod-service-icon mod_service_zheng"></i>
+              <div class="mod_service_tit">
+                <h5>正品保障</h5>
+                <p>正品保障，提供发票</p>
+              </div>
+            </li>
+            <li>
+              <i class="mod-service-icon mod_service_kuai"></i>
+              <div class="mod_service_tit">
+                <h5>极速物流</h5>
+                <p>极速物流，极速送达</p>
+              </div>
+            </li>
+            <li>
+              <i class="mod-service-icon mod_service_bao"></i>
+              <div class="mod_service_tit">
+                <h5>无忧售后</h5>
+                <p>7天无理由会换货</p>
+              </div>
+            </li>
+            <li>
+              <i class="mod-service-icon mod_service_te"></i>
+              <div class="mod_service_tit">
+                <h5>特色服务</h5>
+                <p>私人订制家电套餐</p>
+              </div>
+            </li>
+            <li>
+              <i class="mod-service-icon mod_service_help"></i>
+              <div class="mod_service_tit">
+                <h5>帮忙中心</h5>
+                <p>您的购物指南</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- mod_help -->
+        <div class="mod_help">
+          <dl class="mod_help_item">
+            <dt>购物指南</dt>
+            <dd><a href="javascript:;">购物流程 </a></dd>
+            <dd><a href="javascript:;">会员介绍 </a></dd>
+            <dd><a href="javascript:;">生活旅行/团购 </a></dd>
+            <dd><a href="javascript:;">常见问题 </a></dd>
+            <dd><a href="javascript:;">大家电 </a></dd>
+            <dd><a href="javascript:;">联系客服 </a></dd>
+          </dl>
+          <dl class="mod_help_item">
+            <dt>配送方式</dt>
+            <dd><a href="javascript:;">上门自提 </a></dd>
+            <dd><a href="javascript:;">211限时抵达 </a></dd>
+            <dd><a href="javascript:;">配送服务查询 </a></dd>
+            <dd><a href="javascript:;">配送费收取标准 </a></dd>
+            <dd><a href="javascript:;">海外配送 </a></dd>
+          </dl>
+          <dl class="mod_help_item">
+            <dt>支付方式</dt>
+            <dd><a href="javascript:;">货到付款 </a></dd>
+            <dd><a href="javascript:;">在线支付 </a></dd>
+            <dd><a href="javascript:;">分期付款 </a></dd>
+            <dd><a href="javascript:;">邮局汇款 </a></dd>
+            <dd><a href="javascript:;">公司转账 </a></dd>
+          </dl>
+          <dl class="mod_help_item">
+            <dt>售后服务</dt>
+            <dd><a href="javascript:;">售后政策 </a></dd>
+            <dd><a href="javascript:;">价格保护 </a></dd>
+            <dd><a href="javascript:;">退款说明 </a></dd>
+            <dd><a href="javascript:;">返修/退换货 </a></dd>
+            <dd><a href="javascript:;">取消订单 </a></dd>
+          </dl>
+          <dl class="mod_help_item">
+            <dt>特色服务</dt>
+            <dd><a href="javascript:;">夺宝岛 </a></dd>
+            <dd><a href="javascript:;">DIY装机 </a></dd>
+            <dd><a href="javascript:;">延保服务 </a></dd>
+            <dd><a href="javascript:;">品优购E卡 </a></dd>
+            <dd><a href="javascript:;">品优购通信 </a></dd>
+          </dl>
+          <dl class="mod_help_item mod_help_app">
+            <dt>帮助中心</dt>
+            <dd>
+              <img data-lazy-src="img/erweima.png" alt="" />
+              <p>品优购客户端</p>
+            </dd>
+          </dl>
+        </div>
+        <!-- mod_copyright  -->
+        <div class="mod_copyright">
+          <p class="mod_copyright_links">
+            <a href="javascript:;">关于我们</a>|
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=1355083406&site=qq&menu=yes">联系我们</a>|
+            <a href="javascript:;">联系客服</a>|
+            <a href="javascript:;">商家入驻</a>|
+            <a href="javascript:;">营销中心</a>|
+            <a href="javascript:;">手机品优购</a>|
+            <a href="javascript:;">友情链接</a>|
+            <a href="javascript:;">销售联盟</a>|
+            <a href="javascript:;">品优购社区</a>|
+            <a href="javascript:;">品优购公益</a>|
+            <a href="javascript:;">English Site</a>|
+            <a href="javascript:;">Contact U</a>
+          </p>
+          <p class="mod_copyright_info">
+            地址：无
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--页面底部END-->
+    <!--侧栏面板开始-->
+
+    <!-- 侧栏按钮 -->
+    <div class="toolbar">
+      <a class="item phone" href="javascript:;"
+        ><div class="icon">
+          <img class="static" src="img/phone-in.png" /><img
+            class="hover"
+            src="img/phone-out.png"
+          />
+        </div>
+        <span>手机App</span>
+        <div class="pop-content">
+          <img src="img/erweima-mi.png" alt="" />
+          <span> 扫码领取新人百元礼包 </span>
+        </div> </a
+      ><a class="item people" href="javascript:;"
+        ><div class="icon">
+          <img class="static" src="img/people-in.png" /><img
+            class="hover"
+            src="img/people-out.png"
+          />
+        </div>
+        <span>个人中心</span> </a
+      ><a class="item sale" href="javascript:;"
+        ><div class="icon">
+          <img class="static" src="img/sale-in.png" /><img
+            class="hover"
+            src="img/sale-out.png"
+          />
+        </div>
+        <span>售后服务</span> </a
+      ><a class="item service" href="javascript:;"
+        ><div class="icon">
+          <img class="static" src="img/service-in.png" /><img
+            class="hover"
+            src="img/service-out.png"
+          />
+        </div>
+        <span>人工客服</span> </a
+      ><a class="item cart" href="javascript:;"
+        ><div class="icon">
+          <img class="static" src="img/cart-in.png" /><img
+            class="hover"
+            src="img/cart-out.png"
+          />
+        </div>
+        <span>购物车</span></a
+      ><a class="item top" href="javascript:;"
+        ><div class="icon">
+          <img class="static" src="img/top-in.png" /><img
+            class="hover"
+            src="img/top-out.png"
+          />
+        </div>
+        <span>回顶部</span></a
+      >
+    </div>
+    <script src="js/index/data.js"></script>
+
+    <script src="js/EasyLazyload.min.js"></script>
+  </body>
+</html>
